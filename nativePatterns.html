@@ -1,0 +1,256 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Native Patterns</title>
+    <!-- Normal style sheet used for layout and general formatting. -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- jQuery UI style sheet reference. Start1 is the theme used. -->
+    <link href="css/start1/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <!-- jQuery UI JavaScript library reference. -->
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/shopping card add item.js"></script>
+</head>
+<!-- -->
+<body>
+    <section id="container">
+    <header><img src="images/header.fw.png" alt="M&amacr;lama Creations"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="floralPatterns.html">Floral</a></li>
+                <li><a href="nativePatterns.html">Native</a></li>
+                <li><a href="otherPatterns.html">Other</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="background">
+        <a href="checkOut.html"><img src="images/flower.fw.png" class="cart"/></a>
+        <div id="sizes">
+        <ul>
+            <li><a href="#tabs-1">Traditional</a></li>
+            <li><a href="#tabs-2">Half</a></li>
+            <li><a href="#tabs-3">Plus</a></li>
+        </ul>
+            <div id="tabs-1">
+                <div id="items">
+                    <table width="600px">                    
+                      <form name="order_form">                      
+                          <table width="50%" cellspacing="20">
+                            <tr>
+                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <img class="img-zoom" src="images/native/PBA0646-1.jpg" alt="Native print" border="0" align="left" width="103px" />
+                                <div class="item_name">Native print  $15</div>
+                                <p>
+                                Product #P0646t<br />
+                                Brown and green border print. <br />
+                                Quantity:
+                                </p>
+                                  <input name="qty0" size="1" value="1" maxlength="1" onfocus="clearValue('0')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P0646t','Brown and green border print ','15',0)" />
+                                _________________________________________________
+                              </td>
+                            </tr>                          
+                            <tr>
+                              <td>                    
+                                <img class="img-zoom" src="images/native/PBA1137-1.jpg" alt="Native print" border="0" align="left" width="103px" />
+                                <div class="item_name">Native print $15</div>                     
+                                <p>Product #P1137t<br />                    
+                                Red and green print.<br />
+                                Quantity: 
+                                </p>
+                                  <input name="qty1" size="1" value="1" maxlength="1" onfocus="clearValue('1')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P1137t','Red and green print','15',1)" />
+                                ___________________________________________                     
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>                     
+                                <img class="img-zoom" src="images/native/PBA1247-1.jpg" alt="Native print" border="0" align="left" width="103px"  />
+                                <div class="item_name">Native print $15</div>
+                                <p>
+                                Product #P1247t<br />
+                                Yellow and orange native print <br />
+                                Quantity:
+                                </p>
+                                  <input name="qty2"  size="1" value="1" maxlength="1" onfocus="clearValue('2')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P1247t','Yellow and orange native print ','15',2)" />
+                                _________________________________________________
+                              </td>
+                            <tr>
+                              <td>
+                                <img class="img-zoom" src="images/native/PBB2334-1.jpg" alt="Native print" border="0" align="left" width="103px"  />
+                                <div class="item_name">Native print $15</div>
+                                <p>Product #P2334t<br />
+                                Pink and green gradiant <br />
+                                Quantity:
+                                </p>
+                                  <input name="qty3"  size="1" value="1" maxlength="1" onfocus="clearValue('3')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P2334t','Pink and green gradiant ','15',3)" />
+                                _________________________________________________
+                              </td>
+                            </tr>
+                        
+                    </table>
+                 </div> <!--end items -->
+            </div> <!--end tabs-1 -->
+            <div id="tabs-2">
+                <div id="items">                
+                    <table width="50%" cellspacing="20">
+                      <tr>
+                        
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="img-zoom" src="images/native/PBA0646-1.jpg" alt="Native print" border="0" align="left" width="103px" />
+                          <div class="item_name">Native print half size $8</div>
+                          <p>
+                          Product #P0646h<br />
+                          Brown and green border print. <br />
+                          Quantity:
+                          </p>
+                            <input name="qty4" size="1" value="1" maxlength="1" onfocus="clearValue('4')" /><br /><br />
+                            <input type="button" value="Add to Cart"
+                            onclick="placeOrder('P0646h','Brown and green border half ','8',4)" />
+                          _________________________________________________
+                        </td>
+                      </tr>                          
+                      <tr>
+                        <td>                    
+                          <img class="img-zoom" src="images/native/PBA1137-1.jpg" alt="Native print" border="0" align="left" width="103px" />
+                          <div class="item_name">Native print half size $8</div>                     
+                          <p>Product #P1137h<br />                    
+                            Red and green print.<br />
+                          Quantity: 
+                          </p>
+                            <input name="qty5" size="1" value="1" maxlength="1" onfocus="clearValue('5')" /><br /><br />
+                            <input type="button" value="Add to Cart"
+                            onclick="placeOrder('P1137h','Red and green print half ','8',5)" />
+                          ___________________________________________                     
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>                     
+                          <img class="img-zoom" src="images/native/PBA1247-1.jpg" alt="Native print" border="0" align="left" width="103px"  />
+                          <div class="item_name">Native print half size $8</div>
+                          <p>
+                          Product #P1247h<br />
+                          Yellow and orange native print <br />
+                          Quantity:
+                          </p>
+                            <input name="qty6"  size="1" value="1" maxlength="1" onfocus="clearValue('6')" /><br /><br />
+                            <input type="button" value="Add to Cart"
+                            onclick="placeOrder('P1247h','Yellow and orange native half ','8',6)" />
+                          _________________________________________________
+                        </td>
+                      <tr>
+                        <td>
+                          <img class="img-zoom" src="images/native/PBB2334-1.jpg" alt="Native print" border="0" align="left" width="103px"  />
+                          <div class="item_name">Native print half size $8</div>
+                          <p>Product #P2334h<br />
+                          Pink and green gradiant <br />
+                          Quantity:
+                          </p>
+                            <input name="qty7"  size="1" value="1" maxlength="1" onfocus="clearValue('7')" /><br /><br />
+                            <input type="button" value="Add to Cart"
+                            onclick="placeOrder('P2334h','Pink and green gradiant half ','8',7)" />
+                          _________________________________________________
+                        </td>
+                      </tr>
+                    </table>
+                 </div> <!--end items -->
+            </div><!--end tabs-2 -->
+            <div id="tabs-3">
+                <div id="items">                
+                    <table width="50%" cellspacing="20">
+                            <tr>
+                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <img class="img-zoom" src="images/native/PBA0646-1.jpg" alt="Native print" border="0" align="left" width="103px" />
+                                <div class="item_name">Native print plus size $25</div>
+                                <p>
+                                Product #P0646p<br />
+                                Brown and green border print. <br />
+                                Quantity:
+                                </p>
+                                  <input name="qty8" size="1" value="1" maxlength="1" onfocus="clearValue('8')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P0646p','Brown and green border plus','25',8)" />
+                                _________________________________________________
+                              </td>
+                            </tr>                          
+                            <tr>
+                              <td>                    
+                                <img class="img-zoom" src="images/native/PBA1137-1.jpg" alt="Native print" border="0" align="left" width="103px" />
+                                <div class="item_name">Native print plus size $25</div>                     
+                                <p>Product #P1137p<br />                    
+                                Red and green print.<br />
+                                Quantity: 
+                                </p>
+                                  <input name="qty9" size="1" value="1" maxlength="1" onfocus="clearValue('9')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P1137p','Red and green print plus ','8',9)" />
+                                ___________________________________________                     
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>                     
+                                <img class="img-zoom" src="images/native/PBA1247-1.jpg" alt="Native print" border="0" align="left" width="103px"  />
+                                <div class="item_name">Native print plus size $25</div>
+                                <p>
+                                Product #P1247p<br />
+                                Yellow and orange native print <br />
+                                Quantity:
+                                </p>
+                                  <input name="qty10"  size="1" value="1" maxlength="1" onfocus="clearValue('10')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P1247p','Yellow and orange native plus ','25',10)" />
+                                _________________________________________________
+                              </td>
+                            <tr>
+                              <td>
+                                <img class="img-zoom" src="images/native/PBB2334-1.jpg" alt="Native print" border="0" align="left" width="103px"  />
+                                <div class="item_name">Native print plus size $25</div>
+                                <p>Product #P2334p<br />
+                                Pink and green gradiant <br />
+                                Quantity:
+                                </p>
+                                  <input name="qty11"  size="1" value="1" maxlength="1" onfocus="clearValue('11')" /><br /><br />
+                                  <input type="button" value="Add to Cart"
+                                  onclick="placeOrder('P2334p','Pink and green gradiant plus ','25',11)" />
+                                _________________________________________________
+                              </td>
+                            </tr>
+                </table> 
+                        </form>
+                    </table>
+                 </div> <!--end items -->
+            </div> <!--end tabs-3 -->
+        </div> <!--end sizes -->
+        
+        
+        
+    </div>  <!-- end div background-->
+    
+
+
+
+
+
+    <footer>M&amacr;lama Creations &#169; 2015</footer>
+    </section>
+</body>
+</html>

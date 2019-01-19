@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- 
+	
+Display shopping cart
+
+Adapted from Tutorial 9 of
+Carey, P., & Canovatchel, F. (2006). New Perspectives on Javascript. Boston, MA: Thompson Course Technology.
+
+-->
+<title>Check Out</title>
+<!-- Normal style sheet used for layout and general formatting. -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/reg.css">
+<link rel="stylesheet" type="text/css" href="css/cart.css" />  
+<!-- jQuery UI style sheet reference. Start1 is the theme used. -->
+<link href="css/start1/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+<!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<!-- jQuery UI JavaScript library reference. -->
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/shopping cart display item.js"></script>
+<script src="js/validation.js"></script>
+
+</head>
+
+<body>
+<div id="background">
+<section id="displayCart">
+<img src="images/shopping_cart.fw.png" alt="shopping cart" border="0" align="center" />
+<br />
+
+
+<table border="0" cellpadding="0" cellspacing="0" align="center">
+ <tr>
+	<td valign="top" colspan="2">
+		<table align="center" border="0" cellpadding="5" cellspacing="7">
+		  <tr>
+			<th>Product Number</th>
+			<th>Product</th>
+			<th>Price </th>
+			<th>Quantity</th>
+			<th>Cost</th>
+		 </tr>
+			<script type="text/javascript">
+			showOrder()
+			</script>
+	  	</table>
+	</td>
+	
+ </tr>
+
+</table>
+
+
+</section>
+<section id="billingInfo">
+ 
+
+            <form action="index.html" method="get" name="registration_form" id="registration_form">
+		<fieldset>
+                    <legend>General Information</legend>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" id="first_name"><br>
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" id="last_name"><br>
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email" id="email"><br>
+                        <label for="email2">Re-type your email address:</label>
+                        <input type="text" name="email2" id="email2"><br>
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" id="phone" placeholder="999-999-9999"><br>
+        	
+		</fieldset>
+		<fieldset>
+                    <legend>Billing Address</legend>
+                        <label for="address1">Street address:</label>
+                        <input type="text" name="address1" id="address1"><br>
+                        <label for="address2">Address2:</label>
+                        <input type="text" name="address2" id="address2"><br>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city"><br>
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="state"><br>
+                        <label for="zip">Zip code:</label>
+                        <input type="text" name="zip" id="zip"><br>
+                    </fieldset>		
+		<fieldset id="creditcard">
+                    <legend>Payment Information</legend>
+                        <fieldset class="optionGroup">
+                          <input type="radio" name="ccard" id="ccard" />
+                          <label for="diners">Diners Club</label>
+                          
+                          <input type="radio" name="ccard" id="ccard" />
+                          <label for="discover">Discover</label>
+                          
+                          <input type="radio" name="ccard" id="ccard" />
+                          <label for="master">Master Card</label>
+                          
+                          <input type="radio" name="ccard" id="ccard"  />
+                          <label for="visa">Visa</label>
+                        </fieldset>
+                       
+                       <label for="ccardnumber">Credit Card Number</label>
+                       <input name="ccardnumber" id="ccardnumber" />
+                       
+                       <label for="ccardmonth">Expiration Date</label>
+                       <select name="ccardmonth" required>
+                          <option value="" selected="selected">--Month--</option>
+                          <option value="01">January (01)</option>
+                          <option value="02">February (02)</option>
+                          <option value="03">March (03)</option>
+                          <option value="04">April (04)</option>
+                          <option value="05">May (05)</option>
+                          <option value="06">June (06)</option>
+                          <option value="07">July (07)</option>
+                          <option value="08">August (08)</option>
+                          <option value="09">September (09)</option>
+                          <option value="10">October (10)</option>
+                          <option value="11">November (11)</option>
+                          <option value="12">December (12)</option>
+                       </select>
+                       <select name="ccardyear" required>
+                          <option value="" selected="selected">--Year--</option>
+                          <option value="15">2015</option>
+                          <option value="16">2016</option>
+                          <option value="17">2017</option>
+                          <option value="18">2018</option>
+                          <option value="19">2019</option>
+                       </select>
+                      
+                          
+                    </fieldset>  
+		</fieldset>
+
+		<input type="submit" id="submit" value="confirn"
+		onclick="confirm()"><br>
+
+	</form>
+ 
+</section>
+</div>
+
+</body>
+</html>
