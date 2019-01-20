@@ -1,0 +1,139 @@
+/*  reset & .clear
+----------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after { clear: both }
+
+.clear { *zoom: 1 }
+
+/*  MAIN
+----------------------------*/
+#container {
+    max-width: 1024px;
+    width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+header img{
+    display: block;
+    margin: 0;
+    position: relative;
+    max-width: 940px;
+    width: 93%;
+    min-height: 400px;
+}
+
+
+#background {
+    background: DeepSkyBlue;
+    background: linear-gradient(DeepSkyBlue, PapayaWhip ) no-repeat;
+    max-width: 940px;
+    width: 93%;
+    min-height: 850px;
+    
+}
+aside {
+    width: 215px;
+}
+
+.model {
+    max-width: 190px;
+    width: 90%;
+    min-height: 283px;
+    -moz-border-radius: 190px/278px;
+    -webkit-border-radius: 190px 278px;
+    border-radius: 190px/278px;
+    padding: 30px;
+    float: left;
+    margin: 20px;
+    
+}
+
+article p {
+    padding: 30px 50px;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+article .model {
+    float: none;
+    position: relative;
+    margin-left: 100px;
+}
+/* styles for product pages */
+.cart {
+    float: right;
+    width: 10%;
+    margin: 5px;
+}
+/* enlarging on hover */
+.img-zoom {
+    width: 103px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(2); 
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+
+#items {
+    position:absolute;
+    top:50px;
+    left:110px;
+    width:65%;
+    font-size:12px;
+}
+#items img {
+    margin-right: 10px;
+    
+}
+
+.item_name {
+    line-height:120%;
+    color:#336633;
+    font-weight:bold;
+    font-size: 12px;
+	
+}
+p {
+    font-size: 12px;
+}
+
+/* Change tabs defaults */
+	  
+#sizes {
+    max-width: 800px;
+    width: 80%;
+    float: left;
+}
+#sizes.ui-tabs.ui-widget-content, .ui-tabs .ui-tabs-nav {
+    background: transparent;
+    border: none;
+
+}
+
+/* submit button styles */
+#submit {
+    background-color: papayaWhip;
+    float: none;
+    width: 150px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 15px;
+}

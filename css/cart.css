@@ -1,0 +1,115 @@
+/* 
+
+styles 
+
+Taken from Tutorial 9 of
+Carey, P., & Canovatchel, F. (2006). New Perspectives on Javascript. Boston, MA: Thompson Course Technology.
+
+*/
+
+/* styles for cart page */
+#displayCart img {
+    width: 80%;
+}
+table {
+    margin-left: 20px;
+}
+
+.center {
+	text-align:center;
+}
+.right {
+	text-align:right;	
+}
+
+a:link {
+	color:#23238e;
+	text-decoration:none;
+	font-size:12px;
+}
+	  
+a:visited {
+	color:#23238e;
+	text-decoration:none;
+}
+		 
+a:hover {
+	color:#23238e;
+	text-decoration:underline;
+}
+
+/* Form styles */
+
+#billingInfo {
+    margin-top: 20px;
+}
+.form {
+    float: left;
+    max-width: 470px;
+    width: 50%;
+}
+h1 {
+    text-align: center;
+}
+fieldset {
+    border: none;
+    margin: 15px;
+    
+}
+fieldset legend {
+    background-color: #6eac2c;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+label {
+    clear: left; 
+    float: left;
+    font-size: 0.8em;
+    text-align: right;
+    margin: 2px 5px;
+    width: 25%;
+    
+}
+
+input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    width: 30%;
+    margin: 2px 0px;
+    
+}
+select {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 2px;
+}
+
+/* optionGroup styles */
+fieldset.optionGroup {
+    margin-left: 25%;
+}
+
+fieldset.optionGroup label {
+    display: inline;
+    float: none;
+    width: 100px;
+}
+
+fieldset.optionGroup input {
+    display: inline;
+    float: none;
+    margin: 0px;
+    width: 20px;
+}
+
+label.error {
+    float: none;
+    color: red;
+    font-size: 12px;
+}		
